@@ -1,0 +1,82 @@
+﻿@model Survey.Models.BOSurvey
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="form-horizontal" align="center">
+    <h4>Survey</h4>
+    <table>
+
+
+        <tr>
+            <td>@Html.LabelFor(model => model.Name)</td>
+            <td>
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Name" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.Age)
+            </td>
+            <td>@Html.TextBoxFor(model => model.Age, new { @maxlength = "2", onkeypress = "return isNumberKey(event)" })</td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender</label><br /></td>
+            <td>
+                @Html.RadioButtonFor(m => m.Gender, "Male")
+                <label for="male">Male</label>&nbsp;
+                @Html.RadioButtonFor(m => m.Gender, "Female")
+                <label for="female">Female</label>&nbsp;
+                @Html.RadioButtonFor(m => m.Gender, "Transgender")
+                <label for="transgender">Transgender</label>
+
+            </td>
+            </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.Email)</td>
+            <td>@Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })</td>
+
+        </tr>
+        <tr>
+            <td><label for="Resume">Upload Resume</label></td>
+            <td><input type="file" id="imageUpload" name="image" class="form-control" /></td>
+
+        </tr>
+        <tr>
+            <td><label for="city">City</label></td>
+            <td>
+               
+                @Html.DropDownListFor(model => model.CityId, new SelectList(Model.BOCityList, "CityId", "CityName", Model.CityId), "--Select--")
+            
+            </td>
+        </tr>
+        <tr>
+           
+            <td><label for="education">Education</label></td>
+             <td> 
+                 <label><input type="checkbox" value="10th" name="education"> 10th</label>
+                <label><input type="checkbox" value="12th" name="education"> 12th</label>
+                <label><input type="checkbox" value="Degree" name="education"> Degree</label>
+                <label><input type="checkbox" value="Masters" name="education"> Masters</label>
+                </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Save" id="btnsave" class="btn btn-default" />
+            </td>
+            <td>
+                <input type="button" value="Cancel" id="btncancel" class="btn btn-default" />
+            </td>
+        </tr>
+    </table>
+
+    
+   
+
+
+
+</div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/Survey.js"></script>

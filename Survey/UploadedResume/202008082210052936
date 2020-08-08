@@ -1,0 +1,67 @@
+Full name
+Post nominals
+Image
+Telephone no
+Email address
+Postal Address
+Bio
+Bio Url
+Bio PDF
+Organization
+Past Organization(s)
+Is Feature
+Is Top Contributor
+
+
+============================
+
+ContributorFullName
+ContributorPostNominals
+ContributorImage
+ContributorTel
+ContributorEmail
+ContributorAddress
+ContributorBioRichText
+ContributorBioWebsite
+ContributorBioPDF
+ContributorOrganization
+ContributorPastOrganization
+IsFeature
+IsTopContributor
+
+================
+/CMSPages/GetFile.aspx?guid={%ContributorImage%}
+
+
+{% GetDocumentUrl() %}
+
+<div class="TopContributors">
+  <div style="float:left;" class="UserName">
+    <%#IfEmpty(GetUserProfileURL(Eval("UserName")), "", "<a href='" + HTMLEncode(GetUserProfileURL(Eval("UserName"))) + "'>")%>
+      <%# HTMLEncode(GetNotEmpty("UserNickname;UserName")) %>
+    <%# IfEmpty(GetUserProfileURL(Eval("UserName")), "", "</a>") %>
+  </div>
+  <div style="float:right;" class="PostCount"><%# ValidationHelper.GetInteger(Eval("UserForumPosts"), 0) %></div>
+  <div style="clear:both;"></div>
+</div>
+
+
+
+Can the selected species be highlighted for users to see which species they are selecting content for. currently the colour of teh species is shown but it would also help to display the name of the species too so that there is no doubt. 
+
+https://snipboard.io/m9yqgO.jpg
+
+
+Searched for 'ankole' but Bovis breed doesn't come up - only one item listed
+
+https://snipboard.io/vIMt47.jpg
+
+
+
+
+
+
+
+excel point 7
+
+excel point 11

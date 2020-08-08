@@ -1,0 +1,2 @@
+F:\project\Survey\Survey.Tests\obj\Debug\Survey.Tests.csprojAssemblyReference.cache
+F:\project\Survey\Survey.Tests\obj\Debug\Survey.Tests.csproj.CoreCompileInputs.cache

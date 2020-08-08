@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Survey.Models.BOSurvey>
+
+@{
+    ViewBag.Title = "Details";
+
+}
+
+<h2>Details</h2>
+
+
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+
+        <th>
+            Age
+        </th>
+
+        <th>
+            Gender
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Education
+        </th>
+        <th>
+            Resume
+        </th>
+
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CityName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UploadResume)
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+
+
+
+
