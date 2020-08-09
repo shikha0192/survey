@@ -59,7 +59,7 @@ $(document).ready(function () {
 
         }
         if (Age == "") {
-            alert("Age is required.");
+            alert("Enter your Age.");
             return false;
 
         }
@@ -83,13 +83,13 @@ $(document).ready(function () {
 
         }
         if (CityId == 0) {
-            alert("City is required.");
+            alert("Select your City.");
             return false;
 
         }
 
         if (UploadResumePath == "") {
-            alert("Resume is required.");
+            alert("Upload your Resume.");
             return false;
 
         }
