@@ -143,7 +143,7 @@ namespace HomeController.Controllers
                 surveyList.Add(survey);
                 obj.BOSurveyList = surveyList;
             }
-            return View(obj);
+            return View(obj.BOSurveyList);
         }
     }
 }
